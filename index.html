@@ -61,7 +61,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button data-modal-open type="button" class="hero-btn">Order Service</button>
+          <button data-modal-open type="button" class="hero-btn">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Our advantages section 2 -->
@@ -532,7 +534,7 @@
                 class="social-footer-link"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="team-facebook-icon"
+                aria-label="team-instagram-icon"
               >
                 <svg class="social-footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#footer-instagram"></use>
@@ -545,7 +547,7 @@
                 class="social-footer-link"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="team-facebook-icon"
+                aria-label="team-twitter-icon"
               >
                 <svg class="social-footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#footer-twitter"></use>
@@ -571,7 +573,7 @@
                 class="social-footer-link"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="team-facebook-icon"
+                aria-label="team-linkedin-icon"
               >
                 <svg class="social-footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#footer-linkedin"></use>
@@ -585,6 +587,84 @@
     <!-- Modal windov -->
     <div data-modal class="overlay is-hidden">
       <div class="modal">
+        <form class="modal-form" name="modal_form">
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-label" for="user_name">Name</label>
+          <div class="modal-wrapper">
+            <input
+              class="modal-input"
+              type="text"
+              name="user_name"
+              id="user_name"
+              minlength="3"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#modal-person"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="user_phone">Phone</label>
+          <div class="modal-wrapper">
+            <input
+              class="modal-input"
+              type="tel"
+              name="user_phone"
+              id="user_phone"
+              minlength="12"
+              maxlength="12"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#modal-phone"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="user_email">Email</label>
+          <div class="modal-wrapper">
+            <input
+              class="modal-input"
+              type="email"
+              name="user_email"
+              id="user_email"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#modal-email"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="user_message">Comment</label>
+          <textarea
+            class="modal-message"
+            name="user_message"
+            id="user_message"
+            rows="6"
+            placeholder="Text input"
+          ></textarea>
+          <label class="modal-policy" for="modal_policy">
+            <input
+              class="form-check visually-hidden"
+              type="checkbox"
+              name="modal_policy"
+              id="modal_policy"
+            />
+            <svg class="modal-policy-icon" width="16" height="16">
+              <use
+                class="uncheck"
+                href="./images/icons.svg#modal-uncheck"
+              ></use>
+              <use class="check" href="./images/icons.svg#modal-check"></use>
+            </svg>
+            <span class="modal-text-policy"
+              >I accept the terms and conditions of the
+              <a
+                class="modal-text-link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Privacy Policy</a
+              ></span
+            ></label
+          >
+          <button class="hero-btn" type="submit">Send</button>
+        </form>
         <button data-modal-close type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close-btn"></use>
