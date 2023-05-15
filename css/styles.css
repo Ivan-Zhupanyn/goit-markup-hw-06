@@ -194,7 +194,7 @@ img {
   line-height: 1.07em;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .hero-btn {
   display: block;
@@ -207,7 +207,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  color: #ffffff;
+  color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5em;
@@ -443,6 +443,7 @@ img {
   width: 208px;
   height: 80px;
   display: inline-block;
+  margin-right: 80px;
 }
 
 .social-footer-title {
@@ -486,6 +487,76 @@ img {
 }
 .social-footer-icon {
   fill: var(--icons-social-color);
+}
+/* Footer form */
+.footer-form {
+  display: inline-block;
+  width: 453px;
+  height: 80px;
+}
+.footer-form-wraper {
+  display: flex;
+  gap: 24px;
+}
+.footer-form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+.footer-form-input {
+  outline: transparent;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2em;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: var(--white-color);
+}
+.footer-form-input::placeholder {
+  color: var(--white-color);
+}
+.footer-form-btn {
+  position: relative;
+  width: 165px;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--link-standart-color);
+  border-radius: 4px;
+  border: none;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-left: 24px;
+  text-align: left;
+  letter-spacing: 0.04em;
+  transition-property: background-color;
+  transition-duration: var(--animation-time);
+  transition-timing-function: var(--animation-timing-function);
+}
+.footer-form-btn:focus,
+.footer-form-btn:hover {
+  background-color: var(--link-focus-color);
+}
+.footer-form-icon {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 /* Portfolio filters*/
 
